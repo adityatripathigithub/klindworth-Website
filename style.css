@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'font1';
+    src: url('/LarkenDEMO-Medium.otf') format('truetype');
+}
+@font-face {
+    font-family: 'font2';
+    src: url('/Satoshi-Regular.woff2') format('truetype');
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    font-family: font1;
+    background-color: #24262B;
+    overflow-x: hidden;
+}
+
+.page1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #EDE9E2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 6.5vw;
+    line-height: 200%;
+    color: #24262B;
+    position: relative;
+}
+
+.page1 h1 span {
+    color: #AC9376;
+}
+
+
+.page1 svg {
+    width: 11%;
+    position: absolute;
+    left: 3%;
+    top: 5%;
+
+}
+.page1 h2{
+    height: 0%;
+    font-size: 20px;
+    /* display: flex;
+    justify-content: end;
+    align-items: end; */
+    position: absolute;
+    right:3%;
+    top: -4%;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    transition: all ease 0.2s;
+
+}
+
+.page1 h2:hover{
+    color: #AC9376;
+}
+
+#menu {
+    background-color: #fff;
+    width: 9vw;
+    height: 3.8vw;
+    border-radius: 50px;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    z-index: 999;
+
+    transition: all ease 0.5s;
+}
+
+#menu .line {
+    height: 2.5px;
+    width: 30px;
+    background-color: black;
+    transition: all ease 0.5s;
+
+}
+
+#menu:hover #line2 {
+    height: 2.5px;
+    width: 30px;
+    position: absolute;
+    background-color: black;
+    rotate: -90deg;
+}
+
+#menu:hover {
+    width: 5vw;
+    border-radius: 50%;
+}
+
+.page1 img{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    position: absolute;
+}
+
+.page2{
+    min-height: 100vh;
+    background-color: #24262B;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row; */
+    color: #EDE9E2;
+    text-align: center;
+    font-size: 3.5vw;
+    padding-top: 5%;
+
+}
+.page2 h1{
+    line-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.page2 span{
+    color: #AC9376;
+}
+.page2 p{
+    font-size: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    text-align: left;
+    font-weight: 100;
+    font-family: font2;
+}
+
+
+
+.page2 h5{
+    font-size: 20px;
+    position: absolute;
+    top: 59%;
+    left: 17%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    color: #AC9376;
+    rotate: -90deg;  
+}
+
+/* .page2-elements{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 5vw;
+    justify-content: space-between;
+  } */
+
+
+
+/* .element#elem1{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+ 
+}
+
+#elem2{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(163, 153, 153);
+} */
+
+/* 
+#elem1{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(204, 24, 24);
+    position: absolute;
+    left: 0%;
+}
+
+#elem2{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(163, 153, 153);
+    position: absolute;
+    left: 0;
+} */
+
+
+.box1{
+    width: 45%;
+    height:60%;
+    /* background-color: red; */
+    background-image: url(https://klindworthroofing.com/wp-content/uploads/2024/01/4213WillowGroveTwilight-2-2-940x639.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    left: 8%;
+    top: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+}
+
+.box1 h2{
+    font-size: 20px;
+    padding-top: 88%;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+
+
+.box1 h4{
+    font-size: 20px;
+    padding-top: 1%;
+    font-weight: 100;
+    color: #9C9B99;
+}
+
+.box2{
+    width: 30%;
+    height:40%;
+    /* background-color: rgb(145, 118, 118); */
+    background-image: url(https://klindworthroofing.com/wp-content/uploads/2024/01/02_Front_Web-519x353.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: absolute;
+    left: 65%;
+    top: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+}
+
+.box2 h2{
+    font-size: 20px;
+    padding-top: 88%;
+    font-weight: 100;
+}
+
+
+
+.box2 h4{
+    font-size: 20px;
+    padding-top: 1%;
+    font-weight: 100;
+    color: #9C9B99;
+    
+}
+
+
+
+.page3{
+    width: 100vw;
+    min-height: 100vh;
+    padding: 6vw 5vw;
+    position: relative;
+
+}
+
+.page3 h1 {
+    position: absolute;
+    top: 15%;
+    font-size: 25vw;
+    font-family: font1;
+    font-weight: 100;
+    color: #ede9e2;
+    line-height: 0.9;
+    letter-spacing: 10px;
+    text-align: center;
+    position: sticky;
+    top: 10%;
+    margin-top: 40%;
+}
+
+
+/* .page3 .imgs{
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    position: sticky;
+    top: 5%;
+    transform-origin: 50% 0%;
+    filter: brightness(1);
+}
+
+ */
+
+
+ .page3 .imgs{
+    width: 100%;
+    position: sticky;
+    top: 5%;
+    margin-top: 5vw;
+    transform-origin: 50% 0%;
+    filter: brightness(1);
+  }
+  
+  .imgs img{
+    width: 100%;
+  
+  }
+  .imgs h1{
+    position: absolute;
+    top: -60%;
+    left: 5%;
+    font-family: font1;
+    font-size: 6vw;
+    color: #ede9e2;
+    text-transform: uppercase;
+  
+}
+
+.page3 button{
+    width: 10%;
+    height: 20%;
+    border-radius: 20px;
+}
+
+.page4{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #EDE9E2;
+}

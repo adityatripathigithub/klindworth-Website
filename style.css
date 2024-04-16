@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'font1';
-    src: url('/LarkenDEMO-Medium.otf') format('truetype');
+    src: url('/Font/LarkenDEMO-Medium.otf') format('truetype');
 }
 @font-face {
     font-family: 'font2';
-    src: url('/Satoshi-Regular.woff2') format('truetype');
+    src: url('/Font/Satoshi-Regular.woff2') format('truetype');
 }
 
 * {
@@ -348,12 +348,52 @@ body {
 
 .page3 button{
     width: 10%;
-    height: 20%;
-    border-radius: 20px;
+    height: 1.5%;
+    border-radius: 30px;
+    position: absolute;
+    left: 45%;
+    top: 97.8%;
+    border: 2px solid #AC9376;
+    font-size: 1.2vw;
+    background-color: transparent;
+    color:white ;
+    transition: all ease 0.2s;
 }
+
+.page3 button:hover{
+    background-color: #AC9376;
+
+}
+
 
 .page4{
     width: 100vw;
     min-height: 100vh;
     background-color: #EDE9E2;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    padding-top: 7%;
+    padding-left: 1%;
+    position: relative;
+
+}
+
+.page4 h3{
+    color: #AC9376;
+    font-weight: 100;
+    font-family: font2;
+
+
+}
+
+.page4 p{
+    text-align: center;
+    color: black;
+    font-weight: 100;
+    position: absolute;
+    top: 20%;
+    left: 26%;
+    font-size: 3.5vw;
 }

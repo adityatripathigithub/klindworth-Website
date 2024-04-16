@@ -18,27 +18,26 @@ gsap.from("page1,img",{
 
 gsap.from(".page2 .box1",{
     duration:1,
-    markers:true,
     height: "0%",
     scrollTrigger:{
         trigger:".page2 ,.box1",
         scroller:"body",
         start:"top -10%",
         end:"top -200%",
-        markers:true,
+        // markers:true,
     }   
 })
 
 gsap.from(".page2 .box2",{
     duration:1,
-    markers:true,
+    // markers:true,
     height: "0%",
     scrollTrigger:{
         trigger:".page2 ,.box2",
         scroller:"body",
         start:"top -10%",
         end:"top -200%",
-        markers:true,
+        // markers:true,
     }   
 })
 
@@ -83,3 +82,16 @@ gsap.to(".page3 #img3",{
     
 })
 
+
+gsap.from(".page4 #pera1", {
+    y: 50,
+    opacity: 0,
+    duration: 0.7,
+    scrollTrigger:{
+        trigger:".page4 ,#pera1",
+        scroller:"body",
+        start:"top 40%",
+        end:"top 20%",
+
+    }
+});
